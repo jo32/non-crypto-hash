@@ -3,7 +3,7 @@ function toU8IntArray(inputString) {
     for (var i = 0; i < inputString.length; i++) {
         var charCode = inputString.charCodeAt(i);
         var temp;
-        while (temp = charCode & 0xff) {
+        while ((temp = charCode & 0xff) || charCode) {
             // pushing one byte
             array.push(temp);
             // shifting 8 bit right
@@ -16,7 +16,7 @@ function toU8IntArray(inputString) {
 function intToUnsignedHex(number) {
     var temp;
     var hexArray = [];
-    while (temp = number & 0xff) {
+    while ((temp = number & 0xff) || number) {
         hexArray.push(temp.toString(16));
         number >>>= 8;
     }
