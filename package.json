@@ -1,6 +1,6 @@
 {
   "name": "non-crypto-hash",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Containing non-crypographic hash functions worked in both browser and Node.js: 1) SuperFastHash; 2) MurmurHash 3",
   "main": "index.js",
   "scripts": {
