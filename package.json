@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/jo32/non-crypto-hash.git"
   },
+  "dependencies": {
+    "path": "^1.12.7"
+  },
   "author": "jo32",
   "license": "MIT"
 }
